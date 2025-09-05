@@ -1,3 +1,5 @@
+package DataStructur;
+
 import java.util.*;
 
 public class Main {
@@ -8,6 +10,7 @@ public class Main {
             int[] array = {1, 2, 3, 4, 5};
             ArrayList<String> arrayList = new ArrayList<>(Arrays.asList("One", "Two", "Three"));
             LinkedList<String> linkedList = new LinkedList<>(Arrays.asList("Node1", "Node2", "Node3"));
+
             Hashtable<String, String> hashtable = new Hashtable<>();
             hashtable.put("A", "Apple");
             hashtable.put("B", "Banana");
