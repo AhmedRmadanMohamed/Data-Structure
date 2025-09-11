@@ -6,6 +6,8 @@ import java.util.ListIterator;
 public class SinglyLinkedLisExample {
     public void SinglyLinkedLis() {
         LinkedList<String> LinkedList = new LinkedList<>();
+        LinkedList.add(null);
+        LinkedList.add(null);
         LinkedList.add("NodeA");
         LinkedList.add("NodeB");
         LinkedList.add("NodeC");
@@ -17,7 +19,6 @@ public class SinglyLinkedLisExample {
         LinkedList.stream().forEach(System.out::println);
         String popped2 = LinkedList.peek();
         System.out.println("peek element: " + popped2);
-
     }
 
     public void SinglyLinkedLisUseIterator() {

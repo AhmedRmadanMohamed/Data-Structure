@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class ArrayListExample {
     public void ArrayListEx() {
         ArrayList<String> list = new ArrayList<>();
-        list.add("Node1");
-        list.add("Node2");
+        list.add(null);
+        list.add(null);
         list.add("Node3");
         list.add("Node4");
         list.add("Node5");
@@ -23,6 +23,9 @@ public class ArrayListExample {
                 list.remove(i);
             }
         }
+
+
+
 
         list.set(1, "New String");
 
