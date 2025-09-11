@@ -31,7 +31,7 @@ public class MemoryVisualization {
         System.out.println("---------");
         System.out.println("Stack Representation:");
         System.out.println("arrayList -> Reference to Heap");
-        System.out.println("| " + arrayList.toString() + " |");
+        System.out.println("| " + arrayList + " |");
         System.out.println("---------");
         System.out.println("Heap Representation:");
         for (int i = 0; i < arrayList.size(); i++) {
@@ -51,7 +51,7 @@ public class MemoryVisualization {
         System.out.println("---------");
         System.out.println("Stack Representation:");
         System.out.println("linkedList -> Reference to Heap");
-        System.out.println("| " + list.toString() + " |");
+        System.out.println("| " + list + " |");
         System.out.println("---------");
         System.out.println("Heap Representation:");
         for (int i = 0; i < list.size(); i++) {
@@ -64,19 +64,18 @@ public class MemoryVisualization {
     }
 
     // HashTable representation
-    public   static void drawHashTable(Hashtable<String, String> hashtable) {
+    public   static void drawHashTable(Hashtable<String, String> hashtable1) {
         System.out.println("HashTable:");
-        for (Map.Entry<String, String> entry : hashtable.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + " -> Value: " + entry.getValue() + " [Memory Address: " + System.identityHashCode(entry.getValue()) + "]");
+        for (Map.Entry<String, String> entry1 : hashtable1.entrySet()) {
+            System.out.println("Key: " + entry1.getKey() + " -> Value: " + entry1.getValue() + " [Memory Address: " + System.identityHashCode(entry1.getValue()) + "]");
         }
         System.out.println("---------");
         System.out.println("Stack Representation:");
         System.out.println("hashTable -> Reference to Heap");
-        System.out.println("| " + hashtable.toString() + " |");
-        System.out.println("---------");
+
         System.out.println("Heap Representation:");
         int index = 0;
-        for (Map.Entry<String, String> entry : hashtable.entrySet()) {
+        for (Map.Entry<String, String> entry : hashtable1.entrySet()) {
             System.out.println("[" + index + "] -> " + entry.getKey() + ": " + entry.getValue());
             index++;
         }
@@ -86,13 +85,13 @@ public class MemoryVisualization {
     // HashMap representation
     public  static void drawHashMap(HashMap<String, String> hashMap) {
         System.out.println("HashMap:");
-        for (Map.Entry<String, String> entry : hashMap.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + " -> Value: " + entry.getValue() + " [Memory Address: " + System.identityHashCode(entry.getValue()) + "]");
+        for (Map.Entry<String, String> entry2 : hashMap.entrySet()) {
+            System.out.println("Key: " + entry2.getKey() + " -> Value: " + entry2.getValue() + " [Memory Address: " + System.identityHashCode(entry2.getValue()) + "]");
         }
         System.out.println("---------");
         System.out.println("Stack Representation:");
         System.out.println("hashMap -> Reference to Heap");
-        System.out.println("| " + hashMap.toString() + " |");
+        System.out.println("| " + hashMap + " |");
         System.out.println("---------");
         System.out.println("Heap Representation:");
         int index = 0;
@@ -112,7 +111,7 @@ public class MemoryVisualization {
         System.out.println("---------");
         System.out.println("Stack Representation:");
         System.out.println("set -> Reference to Heap");
-        System.out.println("| " + set.toString() + " |");
+        System.out.println("| " + set + " |");
         System.out.println("---------");
         System.out.println("Heap Representation:");
         int index = 0;
@@ -148,7 +147,7 @@ public class MemoryVisualization {
         System.out.println("---------");
         System.out.println("Stack Representation:");
         System.out.println("queue -> Reference to Heap");
-        System.out.println("| " + queue.toString() + " |");
+        System.out.println("| " + queue + " |");
         System.out.println("---------");
         System.out.println("Heap Representation:");
         for (String s : queue) {

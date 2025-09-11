@@ -3,7 +3,7 @@ package Recovery.LinkedList;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-public class DoublyLinkedListExsample {
+public class DoublyLinkedListExample {
     public void DoublyLinkedLisUseIterator() {
         LinkedList<String> Names = new LinkedList<>();
 
